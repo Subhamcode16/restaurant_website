@@ -6,18 +6,21 @@ import Events from './components/Events';
 import Testimonials from './components/Testimonials';
 import Reservation from './components/Reservation';
 import Footer from './components/Footer';
+import './index.css'
 
 const App = () => {
   return (
     <div className="font-sans antialiased">
       <Navbar />
-      <Hero />
-      <About />
-      <MenuSection />
-      <Events />
-      <Testimonials />
-      <Reservation />
-      <Footer />
+      <main className="relative z-10">
+        <Hero />
+        <About />
+        <MenuSection />
+        <Events />
+        <Testimonials />
+        <Reservation />
+        <Footer />
+      </main>
     </div>
   );
 };
